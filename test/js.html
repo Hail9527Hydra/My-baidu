@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#fk {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background-color: #F00;
+				left: 0;
+				transition: all 1s;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<input type="button" onclick="yd()" id="" value="点我变化" />
+		
+		<div id="fk"></div>
+		
+		<script type="text/javascript">
+			function yd() {
+				var fk1 = document.getElementById("fk");
+				if(fk1.style.left == "500px") {
+					
+					fk1.style.left = "0";
+					fk1.style.backgroundColor="#F00"
+					fk1.style.borderRadius="0";
+				} else {
+					fk1.style.left = "500px";
+					fk1.style.backgroundColor = "#FF0";
+					fk1.style.borderRadius="50px";
+				}
+			}
+		</script>
+	</body>
+
+</html>

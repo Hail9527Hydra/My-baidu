@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.dfk {
+				width: 1000px;
+				height: 100px;
+				background-color: #F00;
+				position: absolute;
+				transition: all 1s;
+			}
+			
+			.fk1 {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background-color: #FF0;
+				left: 0;
+				transition: all 1s;
+			}
+			
+			.fk2 {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background-color: #F0F;
+				left: 500px;
+				transition: all 1s;
+			}
+			
+			.dfk:hover .fk1 {
+				left: 250px;
+				transition: all 1s;
+				border-radius: 50px;
+			}
+			.dfk:hover .fk2{
+				left: 250px;
+				transition: all 1;
+				border-radius: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="dfk">
+			<div class="fk1"></div>
+			<div class="fk2"></div>
+		</div>
+	</body>
+
+</html>
